@@ -21,19 +21,35 @@ export default function Models() {
             <div className="border border-gray-200 rounded-lg p-6 bg-white shadow-sm">
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col gap-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-6 h-6">
-                      <Image 
-                        src="/cup.png" 
-                        alt="Model preview" 
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6">
+                        <Image
+                          src="/cup.png"
+                          alt="Model preview"
+                          width={24}
+                          height={18}
+                          className="object-contain"
+                        />
+                      </div>
+                      <h3 className="text-lg font-medium text-gray-800">
+                        A short model heading
+                      </h3>
+                    </div>
+                    <button className="w-6 h-6 flex items-center justify-center text-gray-400 hover:text-gray-600">
+                      <Image
+                        src="/close.png"
+                        alt="Close"
                         width={24}
-                        height={18}
+                        height={24}
                         className="object-contain"
                       />
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-800">A short model heading</h3>
+                    </button>
                   </div>
-                  <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</p>
+                  <p className="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur amet labore.
+                  </p>
                   <div className="flex flex-wrap gap-3">
                     <button className="px-4 py-2 text-sm text-[#43444C] bg-white rounded-md">
                       Text button
@@ -48,30 +64,32 @@ export default function Models() {
                 </div>
               </div>
             </div>
-          </div>       
+          </div>
           <div className="flex-1">
-            <div className="border border-gray-200 rounded-lg p-6 bg-white shadow-sm">
+            <div className="border border-gray-200 rounded-lg p-6 bg-white shadow-sm relative">
+              <div className="absolute top-4 right-4">
+                <button className="w-6 h-6 flex items-center justify-center">
+                  <Image src="/close.png" alt="Close" width={24} height={24} />
+                </button>
+              </div>
               <div className="flex flex-col gap-4">
                 <div className="w-full flex justify-center">
                   <div className="w-6 h-6">
-                    <Image 
-                      src="/cup.png" 
-                      alt="Model preview" 
+                    <Image
+                      src="/cup.png"
+                      alt="Model preview"
                       width={24}
                       height={18}
                     />
                   </div>
                 </div>
-                <h3 className="text-lg font-medium text-gray-800 text-center">A short model heading</h3>
-                <div className="w-6 h-6 justify-end">
-                    <Image 
-                      src="/close.png" 
-                      alt="Model preview" 
-                      width={24}
-                      height={18}
-                    />
-                  </div>
-                <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</p>
+                <h3 className="text-lg font-medium text-gray-800 text-center">
+                  A short model heading
+                </h3>
+                <p className="text-gray-600 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur amet labore.
+                </p>
                 <button className="w-full px-4 py-2 text-sm text-white bg-[#7F51F2] rounded-full">
                   Primary button
                 </button>

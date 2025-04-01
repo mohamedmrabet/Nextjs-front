@@ -38,7 +38,7 @@ const Page: React.FC = () => {
                 alt="Buzzbip Logo"
                 width={64}
                 height={64}
-                className="w-16 h-16"
+                className="w-20 h-16"
               />
               <span className="text-gray-700 font-medium">BUZZBIP</span>
             </div>
@@ -46,7 +46,7 @@ const Page: React.FC = () => {
               <Image
                 src="/bp.png"
                 alt="Buzzbip Logo"
-                width={80}
+                width={64}
                 height={64}
                 className="w-20 h-16"
               />
@@ -56,11 +56,10 @@ const Page: React.FC = () => {
               <Image
                 src="/bp.png"
                 alt="Buzzbip Logo"
-                width={80}
+                width={64}
                 height={64}
                 className="w-20 h-16"
               />
-              <span className="text-gray-700 font-medium">BUZZBIP</span>
             </div>
           </div>
         </section>
